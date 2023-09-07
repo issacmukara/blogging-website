@@ -13,8 +13,9 @@ import { fileURLToPath } from "url";
 
 //configure env
 dotenv.config();
-console.log(process.env.DEV_MODE);
-
+// console.log(process.env.DEV_MODE);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 //database config
 connectDB();
 
